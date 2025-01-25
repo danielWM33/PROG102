@@ -1,0 +1,10 @@
+gt_threshold <- function(x, threshold) {
+is_gt <- x > threshold
+result <- sum(is_gt)
+return(result)
+}
+
+temperatures <- c(18.1, 29.9, 22.3, 25.2)
+gt_threshold(temperatures, 25)
+
+
