@@ -86,12 +86,12 @@ plot_kefj(hotday_datetime, hotday_temperature, hotday_exposure)
 # exposure for "Harris" on 2016-04-05.
 
 table(kefj_site)
-hottest_site <- kefj_site == "Aialik"
+hottest_site <- kefj_site == "Harris"
 # gives the site of the highest temperature
-hotday_start <- as.POSIXct("2012-06-01 0:00:00", tz = "Etc/GMT+9")
+hotday_start <- as.POSIXct("2016-04-05 0:00:00", tz = "Etc/GMT+9")
 hotday_start
 # gives the starting time, of the day, of the highest temperature
-hotday_end <- as.POSIXct("2012-06-01 23:59:59", tz = "Etc/GMT+9")
+hotday_end <- as.POSIXct("2016-04-05 23:59:59", tz = "Etc/GMT+9")
 hotday_end
 # gives the ending time, of the day, of the highest temperature
 
@@ -114,7 +114,7 @@ plot_kefj(hotday_datetime, hotday_temperature, hotday_exposure)
 
 # P5: Compare your solutions for P3 and P4 - what variables changed?
 
-#Only variables changed is the site that we choose
+#Only variables changed is the site that we choose, also the times! I CANT BELIEVE WE FORGOT
 
 # P6: What you would pick for the temperature extraction function and
 # parameters' names?
